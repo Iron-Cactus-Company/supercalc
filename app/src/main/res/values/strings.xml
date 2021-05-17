@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">My Application</string>
+
+    <!-- activity_main -->
+    <string name="resultTV_activity_main">Leo is loh, Misha is awesome</string>
+    <string name="resetBtn_activity_main">AC</string>
+    <string name="num7Btn_activity_main">7</string>
+
+    <!-- common -->
+    <string name="app_name">Super Calculator</string>
+
 </resources>
