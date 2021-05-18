@@ -46,57 +46,105 @@
         android:text="@string/resetBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/resetBtn16"
+        app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
-        android:id="@+id/resetBtn16"
+        android:id="@+id/deleteBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:width="79dp"
         android:height="79dp"
         android:background="@drawable/rounded_button"
-        android:text="@string/resetBtn_activity_main"
+        android:text="@string/deleteBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/resetBtn15"
+        app:layout_constraintEnd_toStartOf="@+id/percentBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/resetBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
-        android:id="@+id/resetBtn15"
+        android:id="@+id/percentBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:width="79dp"
         android:height="79dp"
         android:background="@drawable/rounded_button"
-        android:text="@string/resetBtn_activity_main"
+        android:text="@string/percentBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/resetBtn14"
+        app:layout_constraintEnd_toStartOf="@+id/devideBtn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/resetBtn16"
+        app:layout_constraintStart_toEndOf="@+id/deleteBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
-        android:id="@+id/resetBtn14"
+        android:id="@+id/num7Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="83dp"
+        android:height="79dp"
+        android:backgroundTint="@color/dark_gray"
+        android:text="@string/num7Btn_activity_main"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/num7Btn4"
+        app:layout_constraintEnd_toStartOf="@+id/num8Btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetBtn" />
+
+    <Button
+        android:id="@+id/num8Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="83dp"
+        android:height="79dp"
+        android:backgroundTint="@color/dark_gray"
+        android:text="@string/num8Btn_activity_main"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/num8Btn2"
+        app:layout_constraintEnd_toStartOf="@+id/num9Btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num7Btn"
+        app:layout_constraintTop_toBottomOf="@+id/deleteBtn" />
+
+    <Button
+        android:id="@+id/num9Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="83dp"
+        android:height="79dp"
+        android:backgroundTint="@color/dark_gray"
+        android:text="@string/num9Btn_activity_main"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/num9Btn2"
+        app:layout_constraintEnd_toStartOf="@+id/resetBtn13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num8Btn"
+        app:layout_constraintTop_toBottomOf="@+id/percentBtn" />
+
+    <Button
+        android:id="@+id/devideBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:width="79dp"
         android:height="79dp"
         android:background="@drawable/rounded_button"
-        android:text="@string/resetBtn_activity_main"
+        android:text="@string/devideBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/resetBtn15"
+        app:layout_constraintStart_toEndOf="@+id/percentBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
@@ -158,7 +206,7 @@
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/resetBtn10"
+        app:layout_constraintEnd_toStartOf="@+id/resultBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num0Btn"
         app:layout_constraintTop_toBottomOf="@+id/num9Btn3" />
@@ -228,70 +276,6 @@
         app:layout_constraintTop_toBottomOf="@+id/num7Btn5" />
 
     <Button
-        android:id="@+id/num7Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="83dp"
-        android:height="79dp"
-        android:backgroundTint="@color/dark_gray"
-        android:text="@string/num7Btn_activity_main"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/num7Btn4"
-        app:layout_constraintEnd_toStartOf="@+id/num8Btn"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resetBtn" />
-
-    <Button
-        android:id="@+id/num8Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="83dp"
-        android:height="79dp"
-        android:backgroundTint="@color/dark_gray"
-        android:text="@string/num7Btn_activity_main"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/num8Btn2"
-        app:layout_constraintEnd_toStartOf="@+id/num9Btn"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num7Btn"
-        app:layout_constraintTop_toBottomOf="@+id/resetBtn16" />
-
-    <Button
-        android:id="@+id/num9Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="83dp"
-        android:height="79dp"
-        android:backgroundTint="@color/dark_gray"
-        android:text="@string/num7Btn_activity_main"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/num9Btn2"
-        app:layout_constraintEnd_toStartOf="@+id/resetBtn13"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num8Btn"
-        app:layout_constraintTop_toBottomOf="@+id/resetBtn15" />
-
-    <Button
-        android:id="@+id/resetBtn10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="79dp"
-        android:height="79dp"
-        android:background="@drawable/rounded_button"
-        android:text="@string/resetBtn_activity_main"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num9Btn4"
-        app:layout_constraintTop_toBottomOf="@+id/resetBtn11" />
-
-    <Button
         android:id="@+id/resetBtn11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -301,7 +285,7 @@
         android:text="@string/resetBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/resetBtn10"
+        app:layout_constraintBottom_toTopOf="@+id/resultBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num9Btn3"
@@ -337,6 +321,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num9Btn"
-        app:layout_constraintTop_toBottomOf="@+id/resetBtn14" />
+        app:layout_constraintTop_toBottomOf="@+id/devideBtn" />
+
+    <Button
+        android:id="@+id/resultBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="79dp"
+        android:height="79dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/resultBtn_activity_main"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num9Btn4"
+        app:layout_constraintTop_toBottomOf="@+id/resetBtn11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

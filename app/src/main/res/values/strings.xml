@@ -2,8 +2,17 @@
 
     <!-- activity_main -->
     <string name="resultTV_activity_main">Leo is loh, Misha is awesome</string>
+
     <string name="resetBtn_activity_main">AC</string>
+    <string name="deleteBtn_activity_main">DEL</string>
+    <string name="percentBtn_activity_main">%</string>
+
     <string name="num7Btn_activity_main">7</string>
+    <string name="num8Btn_activity_main">8</string>
+    <string name="num9Btn_activity_main">9</string>
+
+    <string name="devideBtn_activity_main">/</string>
+    <string name="resultBtn_activity_main">=</string>
 
     <!-- common -->
     <string name="app_name">Super Calculator</string>
