@@ -7,9 +7,13 @@
     <string name="deleteBtn_activity_main">DEL</string>
     <string name="percentBtn_activity_main">%</string>
 
+
     <string name="num7Btn_activity_main">7</string>
     <string name="num8Btn_activity_main">8</string>
     <string name="num9Btn_activity_main">9</string>
+
+    <string name="num6Btn_activity_main">6</string>
+    <string name="num5Btn_activity_main">5</string>
 
     <string name="devideBtn_activity_main">/</string>
     <string name="resultBtn_activity_main">=</string>

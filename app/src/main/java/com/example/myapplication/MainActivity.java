@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private Button resetBtn, deleteBtn;
+    private Button resetBtn, deleteBtn, num9Btn;
     private TextView resultTV;
 
     @Override
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         resetBtn = findViewById(R.id.resetBtn);
         deleteBtn = findViewById(R.id.deleteBtn);
+        num9Btn = findViewById(R.id.num9Btn);
 
         //Events
         resetBtn.setOnClickListener(v -> resultTV.setText("") );
@@ -30,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
             String changedStr = userInput.substring(0, userInput.length()-1);
 
             resultTV.setText(changedStr);
+        });
+
+        num9Btn.setOnClickListener(v -> {
+
         });
     }
 }
