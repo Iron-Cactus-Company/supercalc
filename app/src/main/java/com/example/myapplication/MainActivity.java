@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
+//git is shit
 public class MainActivity extends AppCompatActivity {
-    private Button resetBtn, deleteBtn, num9Btn;
+    private Button resetBtn, deleteBtn;
+    private Button num8Btn, num9Btn;
     private TextView resultTV;
 
     @Override
