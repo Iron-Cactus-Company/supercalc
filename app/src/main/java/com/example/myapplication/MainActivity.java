@@ -10,7 +10,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private Button resetBtn, deleteBtn;
     private Button num8Btn, num9Btn;
-    private Button resetBtn, deleteBtn, num9Btn,num8Btn ;
     private TextView resultTV;
 
     @Override
