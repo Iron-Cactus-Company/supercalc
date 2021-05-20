@@ -12,8 +12,8 @@
 
     <TextView
         android:id="@+id/resultTV"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="357dp"
+        android:layout_height="59dp"
         android:layout_margin="32dp"
         android:layout_marginBottom="12dp"
         android:background="#0B0A0A"
@@ -26,7 +26,8 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -78,7 +79,7 @@
         android:text="@string/percentBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/devideBtn"
+        app:layout_constraintEnd_toStartOf="@+id/divideBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/deleteBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
@@ -93,7 +94,7 @@
         android:text="@string/num7Btn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/num7Btn4"
+        app:layout_constraintBottom_toTopOf="@+id/num4Btn"
         app:layout_constraintEnd_toStartOf="@+id/num8Btn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,20 +127,20 @@
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/num6Btn"
-        app:layout_constraintEnd_toStartOf="@+id/resetBtn13"
+        app:layout_constraintEnd_toStartOf="@+id/multiplyBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num8Btn"
         app:layout_constraintTop_toBottomOf="@+id/percentBtn" />
 
     <Button
-        android:id="@+id/devideBtn"
+        android:id="@+id/divideBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:width="79dp"
         android:height="79dp"
         android:background="@drawable/rounded_button"
-        android:text="@string/devideBtn_activity_main"
+        android:text="@string/divideBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -148,80 +149,80 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
-        android:id="@+id/num8Btn3"
+        android:id="@+id/num2Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="83dp"
         android:height="79dp"
         android:backgroundTint="@color/dark_gray"
-        android:text="@string/num7Btn_activity_main"
+        android:text="@string/num2Btn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/num0Btn"
-        app:layout_constraintEnd_toStartOf="@+id/num9Btn3"
+        app:layout_constraintEnd_toStartOf="@+id/num3Btn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num7Btn5"
+        app:layout_constraintStart_toEndOf="@+id/num1Btn"
         app:layout_constraintTop_toBottomOf="@+id/num5Btn" />
 
     <Button
-        android:id="@+id/num7Btn5"
+        android:id="@+id/num1Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="83dp"
         android:height="79dp"
         android:backgroundTint="@color/dark_gray"
-        android:text="@string/num7Btn_activity_main"
+        android:text="@string/num1Btn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/num0Btn"
-        app:layout_constraintEnd_toStartOf="@+id/num8Btn3"
+        app:layout_constraintEnd_toStartOf="@+id/num2Btn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num7Btn4" />
+        app:layout_constraintTop_toBottomOf="@+id/num4Btn" />
 
     <Button
-        android:id="@+id/num9Btn3"
+        android:id="@+id/num3Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="83dp"
         android:height="79dp"
         android:backgroundTint="@color/dark_gray"
-        android:text="@string/num7Btn_activity_main"
+        android:text="@string/num3Btn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/num9Btn4"
-        app:layout_constraintEnd_toStartOf="@+id/resetBtn11"
+        app:layout_constraintBottom_toTopOf="@+id/dotBtn"
+        app:layout_constraintEnd_toStartOf="@+id/plusBtn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num8Btn3"
+        app:layout_constraintStart_toEndOf="@+id/num2Btn"
         app:layout_constraintTop_toBottomOf="@+id/num6Btn" />
 
     <Button
-        android:id="@+id/num9Btn4"
+        android:id="@+id/dotBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="83dp"
         android:height="79dp"
         android:backgroundTint="@color/dark_gray"
-        android:text="@string/num7Btn_activity_main"
+        android:text="@string/dotBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/resultBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num0Btn"
-        app:layout_constraintTop_toBottomOf="@+id/num9Btn3" />
+        app:layout_constraintTop_toBottomOf="@+id/num3Btn" />
 
     <Button
-        android:id="@+id/num7Btn4"
+        android:id="@+id/num4Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="83dp"
         android:height="79dp"
         android:backgroundTint="@color/dark_gray"
-        android:text="@string/num7Btn_activity_main"
+        android:text="@string/num4Btn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/num7Btn5"
+        app:layout_constraintBottom_toTopOf="@+id/num1Btn"
         app:layout_constraintEnd_toStartOf="@+id/num5Btn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -237,8 +238,8 @@
         android:text="@string/num6Btn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/num9Btn3"
-        app:layout_constraintEnd_toStartOf="@+id/resetBtn12"
+        app:layout_constraintBottom_toTopOf="@+id/num3Btn"
+        app:layout_constraintEnd_toStartOf="@+id/minusBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num5Btn"
         app:layout_constraintTop_toBottomOf="@+id/num9Btn" />
@@ -253,10 +254,10 @@
         android:text="@string/num5Btn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/num8Btn3"
+        app:layout_constraintBottom_toTopOf="@+id/num2Btn"
         app:layout_constraintEnd_toStartOf="@+id/num6Btn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num7Btn4"
+        app:layout_constraintStart_toEndOf="@+id/num4Btn"
         app:layout_constraintTop_toBottomOf="@+id/num8Btn" />
 
     <Button
@@ -266,62 +267,62 @@
         android:width="188dp"
         android:height="79dp"
         android:backgroundTint="@color/dark_gray"
-        android:text="@string/num7Btn_activity_main"
+        android:text="@string/num0Btn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/num9Btn4"
+        app:layout_constraintEnd_toStartOf="@+id/dotBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num7Btn5" />
+        app:layout_constraintTop_toBottomOf="@+id/num1Btn" />
 
     <Button
-        android:id="@+id/resetBtn11"
+        android:id="@+id/plusBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="79dp"
         android:height="79dp"
         android:background="@drawable/rounded_button"
-        android:text="@string/resetBtn_activity_main"
+        android:text="@string/plusBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/resultBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num9Btn3"
-        app:layout_constraintTop_toBottomOf="@+id/resetBtn12" />
+        app:layout_constraintStart_toEndOf="@+id/num3Btn"
+        app:layout_constraintTop_toBottomOf="@+id/minusBtn" />
 
     <Button
-        android:id="@+id/resetBtn12"
+        android:id="@+id/minusBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="79dp"
         android:height="79dp"
         android:background="@drawable/rounded_button"
-        android:text="@string/resetBtn_activity_main"
+        android:text="@string/minusBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/resetBtn11"
+        app:layout_constraintBottom_toTopOf="@+id/plusBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num6Btn"
-        app:layout_constraintTop_toBottomOf="@+id/resetBtn13" />
+        app:layout_constraintTop_toBottomOf="@+id/multiplyBtn" />
 
     <Button
-        android:id="@+id/resetBtn13"
+        android:id="@+id/multiplyBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="79dp"
         android:height="79dp"
         android:background="@drawable/rounded_button"
-        android:text="@string/resetBtn_activity_main"
+        android:text="@string/multiplyBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/resetBtn12"
+        app:layout_constraintBottom_toTopOf="@+id/minusBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num9Btn"
-        app:layout_constraintTop_toBottomOf="@+id/devideBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/divideBtn" />
 
     <Button
         android:id="@+id/resultBtn"
@@ -336,7 +337,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num9Btn4"
-        app:layout_constraintTop_toBottomOf="@+id/resetBtn11" />
+        app:layout_constraintStart_toEndOf="@+id/dotBtn"
+        app:layout_constraintTop_toBottomOf="@+id/plusBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

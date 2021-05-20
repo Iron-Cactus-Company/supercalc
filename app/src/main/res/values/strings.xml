@@ -1,22 +1,30 @@
 <resources>
 
     <!-- activity_main -->
-    <string name="resultTV_activity_main">Leo is loh, Misha is awesome</string>
+    <string name="resultTV_activity_main">Misha is awesome lo,h</string>
 
     <string name="resetBtn_activity_main">AC</string>
     <string name="deleteBtn_activity_main">DEL</string>
     <string name="percentBtn_activity_main">%</string>
-
+    <string name="divideBtn_activity_main">/</string>
+    <string name="multiplyBtn_activity_main">x</string>
+    <string name="minusBtn_activity_main">-</string>
+    <string name="plusBtn_activity_main">+</string>
+    <string name="resultBtn_activity_main">=</string>
+    <string name="dotBtn_activity_main">,</string>
 
     <string name="num7Btn_activity_main">7</string>
     <string name="num8Btn_activity_main">8</string>
     <string name="num9Btn_activity_main">9</string>
-
     <string name="num6Btn_activity_main">6</string>
     <string name="num5Btn_activity_main">5</string>
+    <string name="num4Btn_activity_main">4</string>
+    <string name="num3Btn_activity_main">3</string>
+    <string name="num2Btn_activity_main">2</string>
+    <string name="num1Btn_activity_main">1</string>
+    <string name="num0Btn_activity_main">0</string>
 
-    <string name="devideBtn_activity_main">/</string>
-    <string name="resultBtn_activity_main">=</string>
+
 
     <!-- common -->
     <string name="app_name">Super Calculator</string>

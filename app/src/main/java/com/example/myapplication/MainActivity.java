@@ -8,8 +8,8 @@ import android.widget.TextView;
 
 //git is shit
 public class MainActivity extends AppCompatActivity {
-    private Button resetBtn, deleteBtn;
-    private Button num8Btn, num9Btn;
+    private Button resetBtn, deleteBtn,percentBtn,dotBtn,plusBtn,minusBtn,divideBtn,multiplyBtn,resultBtn,num7Btn, num8Btn, num9Btn, num6Btn, num5Btn, num4Btn,num3Btn, num2Btn,num1Btn,num0Btn;
+
     private TextView resultTV;
 
     @Override
@@ -19,11 +19,25 @@ public class MainActivity extends AppCompatActivity {
 
         //UI elements
         resultTV = findViewById(R.id.resultTV);
-
+        percentBtn=findViewById(R.id.percentBtn);
+        dotBtn=findViewById(R.id.dotBtn);
+        plusBtn=findViewById(R.id.plusBtn);
+        minusBtn=findViewById(R.id.minusBtn);
+        divideBtn=findViewById(R.id.divideBtn);
+        multiplyBtn=findViewById(R.id.multiplyBtn);
+        resultBtn=findViewById(R.id.resultBtn);
         resetBtn = findViewById(R.id.resetBtn);
         deleteBtn = findViewById(R.id.deleteBtn);
         num9Btn = findViewById(R.id.num9Btn);
         num8Btn = findViewById(R.id.num8Btn);
+        num7Btn = findViewById(R.id.num7Btn);
+        num6Btn = findViewById(R.id.num6Btn);
+        num5Btn = findViewById(R.id.num5Btn);
+        num4Btn = findViewById(R.id.num4Btn);
+        num3Btn = findViewById(R.id.num3Btn);
+        num2Btn = findViewById(R.id.num2Btn);
+        num1Btn = findViewById(R.id.num1Btn);
+        num0Btn = findViewById(R.id.num0Btn);
 
         //Events
         resetBtn.setOnClickListener(v -> resultTV.setText("") );
@@ -35,6 +49,20 @@ public class MainActivity extends AppCompatActivity {
 
             resultTV.setText(changedStr);
         });
+//check that
+        resultBtn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            String[] values = userInput.split("[*+/-]");
+            System.out.println("----------------------------");
+            System.out.println(values[2]);
+            System.out.println("----------------------------");
+           // userInput += "9";
+           // resultTV.setText(values);
+        });
+
+
+
+
 
         num9Btn.setOnClickListener(v -> {
             String userInput = resultTV.getText().toString();
@@ -46,5 +74,65 @@ public class MainActivity extends AppCompatActivity {
             userInput += "8";
             resultTV.setText(userInput);
         });
+        num7Btn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "7";
+            resultTV.setText(userInput);
+        });
+        num6Btn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "6";
+            resultTV.setText(userInput);
+        });
+        num5Btn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "5";
+            resultTV.setText(userInput);
+        });
+        num4Btn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "4";
+            resultTV.setText(userInput);
+        });
+        num3Btn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "3";
+            resultTV.setText(userInput);
+        });
+        num2Btn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "2";
+            resultTV.setText(userInput);
+        });
+        num1Btn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "1";
+            resultTV.setText(userInput);
+        });
+        num0Btn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "0";
+            resultTV.setText(userInput);
+        });
+
+        percentBtn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "%";
+            resultTV.setText(userInput);
+        });
+        divideBtn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "/";
+            resultTV.setText(userInput);
+        });
+        multiplyBtn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "*";
+            resultTV.setText(userInput);
+        });
+
+
+
+
     }
 }
