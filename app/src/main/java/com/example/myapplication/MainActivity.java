@@ -34,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         num9Btn.setOnClickListener(v -> {
-
+            String userInput = resultTV.getText().toString();
+            userInput += "9";
+            resultTV.setText(userInput);
         });
     }
 }
