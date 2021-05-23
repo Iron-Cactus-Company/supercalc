@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
 
 //git is shit
 public class MainActivity extends AppCompatActivity {
@@ -52,12 +55,19 @@ public class MainActivity extends AppCompatActivity {
 //check that
         resultBtn.setOnClickListener(v -> {
             String userInput = resultTV.getText().toString();
-            String[] values = userInput.split("[*+/-]");
+            String [] prenumbers = userInput.split("[-+*/]+");
+           // String [] preoperators = userInput.split("[]+");
+            List<String> numbers = new ArrayList<String>();
+            numbers = Arrays.asList(prenumbers);
+           System.out.println("----------------------------");
+            //System.out.println(values);
+            for(String s: numbers){
+                System.out.println(s);
+            }
+
             System.out.println("----------------------------");
-            System.out.println(values[2]);
-            System.out.println("----------------------------");
-           // userInput += "9";
-           // resultTV.setText(values);
+          // userInput += "9";
+            resultTV.setText(userInput);
         });
 
 
@@ -128,6 +138,22 @@ public class MainActivity extends AppCompatActivity {
         multiplyBtn.setOnClickListener(v -> {
             String userInput = resultTV.getText().toString();
             userInput += "*";
+            resultTV.setText(userInput);
+        });
+
+        plusBtn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "+";
+            resultTV.setText(userInput);
+        });
+        minusBtn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += "-";
+            resultTV.setText(userInput);
+        });
+        dotBtn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            userInput += ".";
             resultTV.setText(userInput);
         });
 
