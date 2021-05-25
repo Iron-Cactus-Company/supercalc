@@ -5,7 +5,7 @@
 
     <string name="resetBtn_activity_main">AC</string>
     <string name="deleteBtn_activity_main">DEL</string>
-    <string name="percentBtn_activity_main">%</string>
+    <string name="plusMinusBtn_activity_main">±</string>
     <string name="divideBtn_activity_main">/</string>
     <string name="multiplyBtn_activity_main">x</string>
     <string name="minusBtn_activity_main">-</string>

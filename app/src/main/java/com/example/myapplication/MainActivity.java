@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 //git is shit
 public class MainActivity extends AppCompatActivity {
-    private Button resetBtn, deleteBtn,percentBtn,dotBtn,plusBtn,minusBtn,divideBtn,multiplyBtn,resultBtn,num7Btn, num8Btn, num9Btn, num6Btn, num5Btn, num4Btn,num3Btn, num2Btn,num1Btn,num0Btn;
+    private Button resetBtn, deleteBtn,plusMinusBtn,dotBtn,plusBtn,minusBtn,divideBtn,multiplyBtn,resultBtn,num7Btn, num8Btn, num9Btn, num6Btn, num5Btn, num4Btn,num3Btn, num2Btn,num1Btn,num0Btn;
 
     private TextView resultTV;
 
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         //UI elements
         resultTV = findViewById(R.id.resultTV);
-        percentBtn=findViewById(R.id.percentBtn);
+        plusMinusBtn=findViewById(R.id.plusMinusBtn);
         dotBtn=findViewById(R.id.dotBtn);
         plusBtn=findViewById(R.id.plusBtn);
         minusBtn=findViewById(R.id.minusBtn);
@@ -53,6 +53,16 @@ public class MainActivity extends AppCompatActivity {
             String changedStr = userInput.substring(0, userInput.length()-1);
 
             resultTV.setText(changedStr);
+        });
+
+        plusMinusBtn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            Double agregate = Double.parseDouble(userInput);
+            agregate = agregate* -1;
+            String result;
+            result = Double.toString(agregate);
+
+            resultTV.setText(result);
         });
 
         num9Btn.setOnClickListener(v -> {
@@ -106,11 +116,7 @@ public class MainActivity extends AppCompatActivity {
             resultTV.setText(userInput);
         });
 
-        percentBtn.setOnClickListener(v -> {
-            String userInput = resultTV.getText().toString();
-            userInput += "%";
-            resultTV.setText(userInput);
-        });
+
         divideBtn.setOnClickListener(v -> {
             String userInput = resultTV.getText().toString();
             userInput += "/";
@@ -137,60 +143,41 @@ public class MainActivity extends AppCompatActivity {
             userInput += ".";
             resultTV.setText(userInput);
         });
-//check that
+
         resultBtn.setOnClickListener(v -> {
             String userInput = resultTV.getText().toString();
-            String [] prenumbers = userInput.split("[-+*/]+");
-            String [] preoperators = userInput.split("[0-9]+");
+            String [] numbers = userInput.split("[-+*/]+");
+            String [] operators = userInput.split("[0-9,.]+");
 
-            List<String> numbers = Arrays.asList(prenumbers);
-            List<String> operators = Arrays.asList(preoperators);
+            for(String s : numbers) System.out.println(s);
+            for(String s : operators) System.out.println(s);
 
-            System.out.println("----------------------------");
-            //System.out.println(values);
-            for(String s: numbers){
-                System.out.println(s);
-            }
-
-            for(String s: operators){
-                System.out.println(s);
-            }
-
-            int total = Integer.parseInt(numbers.get(0));
-
-            for (int i=1; i<numbers.size(); i++) {
-                switch (operators.get(i)) {
-                    case "+":
-                        total += Integer.parseInt(numbers.get(i));
-                        break;
-                    case "-":
-                        total -= Integer.parseInt(numbers.get(i));
-                        break;
-                    case "*":
-                        total *= Integer.parseInt(numbers.get(i));
-                        break;
-                    case "/":
-                        total /= Integer.parseInt(numbers.get(i));
-                        break;
-                }
-            }
-            for (String operator : operators) {
-                switch (operator) {
-
-                    case "+":
-                        for (int j = 0; j < numbers.size(); j++) {
-
-                            String suka = numbers.get(j) + numbers.get(j + 1);
-
-                            System.out.println(suka);
-                            j--;
-                        }
-                }
-            }
 
             System.out.println("----------------------------");
-          // userInput += "9";
-            resultTV.setText(userInput);
+
+
+
+             double agregate = Double.parseDouble(numbers[0]);
+            for(int i=1;i<numbers.length;i++){
+                if(operators[i].equals("+"))
+                    agregate += Double.parseDouble(numbers[i]);
+                else if(operators[i].equals("-"))
+                    agregate -= Double.parseDouble(numbers[i]);
+                else if(operators[i].equals("*"))
+                    agregate *= Double.parseDouble(numbers[i]);
+                else if(operators[i].equals("/"))
+                    agregate /= Double.parseDouble(numbers[i]);
+            }
+            System.out.println(agregate);
+
+
+
+            System.out.println("----------------------------");
+            String result;
+            result = Double.toString(agregate);
+
+            resultTV.setText(result);
+
         });
     }
 }

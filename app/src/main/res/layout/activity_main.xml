@@ -63,20 +63,20 @@
         android:text="@string/deleteBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/percentBtn"
+        app:layout_constraintEnd_toStartOf="@+id/plusMinusBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/resetBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
-        android:id="@+id/percentBtn"
+        android:id="@+id/plusMinusBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:width="79dp"
         android:height="79dp"
         android:background="@drawable/rounded_button"
-        android:text="@string/percentBtn_activity_main"
+        android:text="@string/plusMinusBtn_activity_main"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/divideBtn"
@@ -130,7 +130,7 @@
         app:layout_constraintEnd_toStartOf="@+id/multiplyBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num8Btn"
-        app:layout_constraintTop_toBottomOf="@+id/percentBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/plusMinusBtn" />
 
     <Button
         android:id="@+id/divideBtn"
@@ -145,7 +145,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/percentBtn"
+        app:layout_constraintStart_toEndOf="@+id/plusMinusBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
