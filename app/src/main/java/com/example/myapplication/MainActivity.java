@@ -54,80 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
             resultTV.setText(changedStr);
         });
-//check that
-        resultBtn.setOnClickListener(v -> {
-            String userInput = resultTV.getText().toString();
-            String [] prenumbers = userInput.split("[-+*/]+");
-            String [] preoperators = userInput.split("[0-9]+");
-
-            List<String> numbers = new ArrayList<String>();
-            List<String> operators = new ArrayList<String>();
-
-            numbers = Arrays.asList(prenumbers);
-            operators = Arrays.asList(preoperators);
-
-           System.out.println("----------------------------");
-            //System.out.println(values);
-            for(String s: numbers){
-                System.out.println(s);
-            }
-
-            for(String s: operators){
-                System.out.println(s);
-            }
-
-            int total = Integer.parseInt(numbers.get(0));
-
-            for (int i=0; i<numbers.size(); i++) {
-                switch (operators.get(i)) {
-                    case "+" :
-                        total += Integer.parseInt(numbers.get(i+1));
-                        break;
-                    case "-" :
-                        total -= Integer.parseInt(numbers.get(i+1));
-                        break;
-                    case "*" :
-                        total *= Integer.parseInt(numbers.get(i+1));
-                        break;
-                    case "/" :
-                        total /= Integer.parseInt(numbers.get(i+1));
-                        break;
-                }
-
-
-
-                for(String operator : operators){
-            switch (operator) {
-
-                case "+":
-                    for (int j = 0; j < numbers.size(); j++) {
-
-                        String suka = numbers.get(j)+numbers.get(j+1);
-
-                        System.out.println(suka);
-                        j--;
-                    }
-
-
-
-            }
-        }
-
-
-
-
-
-
-
-
-            System.out.println("----------------------------");
-          // userInput += "9";
-            resultTV.setText(userInput);
-        });
-
-
-
-
 
         num9Btn.setOnClickListener(v -> {
             String userInput = resultTV.getText().toString();
@@ -211,9 +137,60 @@ public class MainActivity extends AppCompatActivity {
             userInput += ".";
             resultTV.setText(userInput);
         });
+//check that
+        resultBtn.setOnClickListener(v -> {
+            String userInput = resultTV.getText().toString();
+            String [] prenumbers = userInput.split("[-+*/]+");
+            String [] preoperators = userInput.split("[0-9]+");
 
+            List<String> numbers = Arrays.asList(prenumbers);
+            List<String> operators = Arrays.asList(preoperators);
 
+            System.out.println("----------------------------");
+            //System.out.println(values);
+            for(String s: numbers){
+                System.out.println(s);
+            }
 
+            for(String s: operators){
+                System.out.println(s);
+            }
 
+            int total = Integer.parseInt(numbers.get(0));
+
+            for (int i=1; i<numbers.size(); i++) {
+                switch (operators.get(i)) {
+                    case "+":
+                        total += Integer.parseInt(numbers.get(i));
+                        break;
+                    case "-":
+                        total -= Integer.parseInt(numbers.get(i));
+                        break;
+                    case "*":
+                        total *= Integer.parseInt(numbers.get(i));
+                        break;
+                    case "/":
+                        total /= Integer.parseInt(numbers.get(i));
+                        break;
+                }
+            }
+            for (String operator : operators) {
+                switch (operator) {
+
+                    case "+":
+                        for (int j = 0; j < numbers.size(); j++) {
+
+                            String suka = numbers.get(j) + numbers.get(j + 1);
+
+                            System.out.println(suka);
+                            j--;
+                        }
+                }
+            }
+
+            System.out.println("----------------------------");
+          // userInput += "9";
+            resultTV.setText(userInput);
+        });
     }
 }
