@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 
-//git is shit
+
 public class MainActivity extends AppCompatActivity {
     private Button resetBtn, deleteBtn,plusMinusBtn,dotBtn,plusBtn,minusBtn,divideBtn,multiplyBtn,resultBtn,num7Btn, num8Btn, num9Btn, num6Btn, num5Btn, num4Btn,num3Btn, num2Btn,num1Btn,num0Btn;
 
